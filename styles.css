@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
   font-family: 'Questrial', sans-serif;
@@ -71,4 +72,18 @@ div {
   margin-top: -90px;
   width: 100%;
   height: 100%;
+}
+
+#top-content {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  font-family:
+}
+
+#top-content h6 {
+  font-size: 65px;
+  font-weight: 200;
+  width: 90%;
 }
