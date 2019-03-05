@@ -45,7 +45,7 @@ sup {
 }
 
 .logo {
-  content:url(/images/jeep.png);
+  content:url(../images/jeep.png);
   height: 12%;
   width: 9%;
 }
