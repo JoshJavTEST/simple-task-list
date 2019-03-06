@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-
 /*
-
 body {
   font-family: 'Questrial', sans-serif;
   margin: 0 auto;
@@ -28,39 +26,43 @@ sup {
   top: 3px;
   font-size: 9px;
 }
-
+*/
 
 .header-container {
   background-color: #000;
-  color: #fff;
-  list-style-type: none;
-  display: flex;
   width: 100%;
-  height: 80px;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-around;
+  height: 78px;
   font-family: 'Roboto', sans-serif;
   line-height: 15px;
 }
 
-.logo {
-  content:url(images/jeep.png);
-  height: 12%;
-  width: 9%;
+.header-container li {
+  list-style-type: none;
 }
 
- #header-nav1  {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   padding: 0 13px;
-   flex-shrink: 1;
-   font-size: 14px;
-   font-weight: 700;
-   text-transform: uppercase;
- }
 
+.header-container a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.header-container span {
+  color: #d1d1d1;
+}
+
+.logo {
+  content:url(images/jeep.png);
+  height: 38px;
+  width: 30px;
+}
+
+.car-jeep {
+  width: 100%;
+}
+
+/*
  #header-nav1 div  {
    padding: 0 13px;
  }
