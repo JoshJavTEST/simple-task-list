@@ -17,69 +17,99 @@
 </head>
   <body>
 
-  <div class="fluid-container navbar header-container d-flex justify-content-center ">
-    <ul class="row d-flex align-items-center">
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-black">
+          <div class="container">
+            <div class="nav-item"><a class="navbar-brand logo" href="#"></a></div>
+            <div class="nav-item"><a class="links-a" href="#">Vehicles <i class="fas fa-chevron-down fa-fw"></i></a></div>
+            <div class="nav-item d-none  d-md-block"><a class="links-a" href="#">Shopping Tools <i class="fas fa-chevron-down fa-fw"></i></a></div>
+            <div class="nav-item d-none d-md-block"><a class="links-a" href="#">Capability <i class="fas fa-chevron-down fa-fw"></i></a></div>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+              <span id="menu-styl">MENU <i class="fas fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+              <ul class="navbar-nav mt-2 mr-auto">
+                <li class="nav-item d-md-none d-lg-none d-xl-none "><a class="nav-link links-a" href="#">Shopping Tools <i class="fas fa-chevron-down fa-fw"></i></a></li>
+                <li class="nav-item d-md-none d-lg-none d-xl-none"><a class="nav-link links-a" href="#">Capability <i class="fas fa-chevron-down fa-fw"></i></a></li>
+                <li class="nav-item">
+                  <a class="nav-link links-a" href="#">Jeep<sup id="trademark">&reg;</sup> Life</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links-a" href="#">Owners <i class="fas fa-chevron-down fa-fw"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links-a" href="#">Merchandise <i class="fas fa-external-link-alt fa-fw"></i></a>
+                </li>
+              </ul>
+              <div class="navbar navbar-expand-lg navbar-white bg-black blink">
+                <span class="nav-item  line">|</span>
+                <div class="nav-item" id="spanish"><a class="nav-link links-b" href="#"><i class="fas fa-comment-alt fa-fw"></i> Español</a></div>
+                  <span class="nav-item links-b"><i class="fas fa-map-marker-alt"></i></span>
+                   <div class="nav-item"><a class="nav-link links-b" href="#">FIND A <br> DEALER</a></div>
+                  <span class="nav-item links-b"><i class="fas fa-wrench"></i></span>
+                   <div class="nav-item"><a class="nav-link links-b" href="#">BUILD & <br> PRICE</a></div>
+             </div>
+            </div>
+          </div>
+        </nav>
+
+
+
+
+<!--
+   <div class="fluid-container navbar header-container d-flex">
+       <div class="row col-12 align-items-center justify-content-center links-a ml-xl-5 flex-shrink-4">
               <div class="logo col-xl-1"></div>
-                <li class="col-xl-1"><a href="#">Vehicles <i class="fas fa-chevron-down fa-fw"></i> </a></li>
-                <li class="col-xl-1"><a href="#">Shopping Tools <i class="fas fa-chevron-down fa-fw"></i> </a></li>
-                <li class="col-xl-1"><a href="#">Capability <i class="fas fa-chevron-down fa-fw"></i> </a></li>
-                <li class="col-xl-1"><a href="#">Jeep<sup>&reg;</sup> Life</a></li>
-                <li class="col-xl-1"><a href="#">Owners <i class="fas fa-chevron-down fa-fw"></i> </a></li>
-                <li class="col-xl-1" id="link-icon"><a href="#">Merchandise <i class="fas fa-external-link-alt fa-fw"></i></a></li>
-                <li class="col-xl-1"id="spanish"><a href="#"><i class="fas fa-comment-alt fa-fw"></i> Español</a></li>
-              <span><i class="fas fa-map-marker-alt"></i></span>
-                <li class="col-xl-1"><a href="#">FIND A <br> Dealer</a></li>
-              <span><i class="fas fa-wrench"></i></span>
-                <li class="col-xl-1"><a href="#">Build & <br> Price</a></li>
-          </ul>
+                <div class="col-xl-1 links-a"><a href="#">Vehicles <i class="fas fa-chevron-down fa-fw"></i> </a></div>
+                <div class="col-xl-1 links-a"><a href="#">Shopping Tools <i class="fas fa-chevron-down fa-fw"></i> </a></div>
+                <div class="col-xl-1 links-a"><a href="#">Capability <i class="fas fa-chevron-down fa-fw"></i> </a></div>
+                <div class="col-xl-1 links-a"><a href="#">Jeep<sup id="trademark">&reg;</sup> Life</a></div>
+                <div class="col-xl-1 links-a"><a href="#">Owners <i class="fas fa-chevron-down fa-fw"></i> </a></div>
+                <div class="col-xl-1 links-a" id="link-icon"><a href="#">Merchandise <i class="fas fa-external-link-alt fa-fw"></i></a></div>
+             <div class="row col-4 mr-xl-4 justify-content-end flex-shrink-0">
+                <div class="col-xl-2 links-b" id="spanish"><a href="#"><i class="fas fa-comment-alt fa-fw"></i> Español</a></div>
+                 <span><i class="fas fa-map-marker-alt"></i></span>
+                  <div class="col-xl-2 links-b"><a href="#">FIND A <br> Dealer</a></div>
+                 <span><i class="fas fa-wrench"></i></span>
+                  <div class="col-xl-2 links-b"><a href="#">Build & <br> Price</a></div>
+            </div>
+          </div>
      </div>
+-->
+
+
 
      <main role="main">
-
        <div id="myCarousel" class="carousel slide" data-ride="carousel">
          <ol class="carousel-indicators">
            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
            <li data-target="#myCarousel" data-slide-to="1"></li>
-           <li data-target="#myCarousel" data-slide-to="2"></li>
          </ol>
          <div class="carousel-inner">
            <div class="carousel-item active">
               <img src="images/header-wrangler.jpg" alt="jeep wrangler"  width="100%">
              <div class="container">
-               <div class="carousel-caption text-left">
+               <div class="carousel-caption mb-4 text-left">
                  <img src="images/mt.png" alt="motor trend suv of the year">
                  <h1>Now get the award-winning 2019 Jeep Wrangler Sport for $299/month for 48 months</h1>
                  <p>3,599 Due at lease signing. No, secutiry desposit required.</p>
-                 <p><a class="btn btn-lg btn-primary" href="#" role="button">VIEW THE 2019 WRANGLER</a></p>
+                 <p><a id="yellow-button1" class="" href="#" role="button">VIEW THE 2019 WRANGLER</a></p>
                </div>
              </div>
            </div>
-           <div class="carousel-item">
-            <img src="images/red-kee.jpg" alt="jeep wrangler"  width="100%">
-             <div class="container">
-               <div class="carousel-caption">
-                 <h1>Jeep Freedom Days</h1>
-                 <p>Now Get</p>
-                 <p>No monthly Payments for 90 Days</p>
-                 <p>An Addtional $500 Bonus Cash</p>
-                 <p>Plus</p>
-                 <p>On the 2019 Cherokee Latitude Plus In Addition To Qualifying Offers</p>
-                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Vehicle Details</a></p>
-                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Build & Price</a></p>
-               </div>
-             </div>
-           </div>
+
            <div class="carousel-item">
              <img src="images/all-jeeps.jpg" alt="jeep wrangler"  width="100%">
              <div class="container">
                <div class="carousel-caption text-right">
-                 <h1>Jeep Freedom Days</h1>
+                 <h1 class="">Jeep Freedom Days</h1>
                  <p>Now Get</p>
                  <p>No monthly Payments for 90 Days</p>
                  <p>An Addtional $500 Bonus Cash</p>
                  <p>Plus</p>
                  <p>On select vehicles in addition to Qualifying offers</p>
-                 <p><a class="btn btn-lg btn-primary" href="#" role="button">View Incentives and Offers</a></p>
+                 <p><a id="yellow-button1" class="" href="#" role="button">View Incentives and Offers</a></p>
                </div>
              </div>
            </div>
@@ -94,11 +124,10 @@
          </a>
        </div>
 
+
        <div class="fluid-container">
-         <div class="row">
-           <div class="col-md-12  d-flex justify-content-center">
-             <h2>Jeep Vehicles</h2>
-           </div>
+         <div class="row mini-j">
+           <div class="col-md-12  d-flex justify-content-center"><h2>Jeep Vehicles</h2></div>
            <div class="col-md-2">
             <a href="#"><img src="images/red-wrang.jpg" alt="red wrangler"></a><p>ALL-NEW WRANGLER</p><p>MSRP STARTING AT</p><p>$27,945</p>
            </div>
@@ -204,9 +233,9 @@
               <a class="navitem" href="#">Careers</a>
               <a class="navitem" href="#">Espanol</a>
 
-                <div class="search-cont"><form class="form-inline  my-2 my-lg-0">
-                   <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                <div class="search-cont"><form class="form-inline my-2 my-lg-0">
+                   <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    <button id="yellow-button" class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                  </form>
                </div>
              </div>
@@ -217,11 +246,10 @@
 
 
 
-<!-- footer dark with links -->
   <div class="footer-all">
               <div class="fluid-container text-center text-md-left link-s d-flex flex-column align-items-center footer-size">
                 <div class="row col-10 justify-content-center">
-                  <div class="col-xl-2 col-md-1 mb-md-1 mb-1">
+                  <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
                       <h5 id="header-styl" class="text-uppercase">Vehicles</h5>
                       <ul class="link-s list-unstyled">
                         <li><a href="#!">Wrangler</a></li>
@@ -232,8 +260,8 @@
                         <li><a href="#!">Gladiator</a></li>
                       </ul>
                     </div>
-                    <div class="col-xl-2 col-md-1 mb-md-1 mb-1">
-                      <!-- Links -->
+                    <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
+
                       <h5 id="header-styl" class="text-uppercase">Research</h5>
                       <ul class="list-unstyled">
                         <li><a href="#!">Adventure Reality</a></li>
@@ -244,8 +272,8 @@
                       </ul>
                     </div>
 
-                    <div class="col-xl-2 col-md-1 mb-md-1 mb-1">
-                      <!-- Links -->
+                    <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
+
                       <h5 id="header-styl" class="text-uppercase">Capability</h5>
                       <ul class="list-unstyled">
                         <li><a href="#!">Trail Rated</a></li>
@@ -256,7 +284,7 @@
                       </ul>
                     </div>
 
-                    <div class="col-xl-2 col-md-1 mb-md-1 mb-1">
+                    <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
                       <h5 id="header-styl" class="text-uppercase">Owners</h5>
                       <ul class="list-unstyled">
                         <li><a href="#!">Jeep Graphics Studio</a></li>
@@ -271,7 +299,7 @@
                       </ul>
                     </div>
 
-                    <div class="col-xl-2 col-md-1 mb-md-1 mb-1">
+                    <div class="col-xl-3 col-lg-2  col-md-1 mb-md-1 mb-1">
                       <h5 id="header-styl" class="text-uppercase">Follow Us</h5>
                       <ul class="list-unstyled d-flex icons1">
                         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
@@ -280,7 +308,7 @@
                         <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
                       </ul>
                     </div>
-                  <!--
+
                     <div class="col-md-1 mb-md-1 mb-1 d">
                       <ul>
                       <h5 id="header-styl" class="text-uppercase">Support</h5>
@@ -288,12 +316,10 @@
                         <li><a href="#"><img src="images/siriusxm.png" alt=""></a></li>
                       </ul>
                     </div>
-                  -->
-                    <!-- Grid column -->
+
                 </div>
                 <div class="row col-10 justify-content-center link-bottom">
-                  <div class="col-xl-2 col-md-1 mb-md-1 mb-1">
-                      <!-- Links -->
+                  <div class="col-xl-2 col-lg-2 col-md-4 mb-md-1 mb-1">
                       <h5 id="header-styl" class="text-uppercase">Cost</h5>
                       <ul class="list-unstyled">
                         <li><a href="#!">View Incentives</a></li>
@@ -305,10 +331,7 @@
                         <li><a href="#!">Get Prequalified</a></li>
                       </ul>
                     </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-xl-2 col-md-1 mb-md-1 mb-1">
-                      <!-- Links -->
+                    <div class="col-xl-2 col-lg-2 col-md-4 mb-md-1 mb-1">
                       <h5 id="header-styl" class="text-uppercase">Locate</h5>
                       <ul class="list-unstyled">
                         <li><a href="#!">Search New Inventory</a></li>
@@ -318,8 +341,7 @@
                       </ul>
                     </div>
 
-                    <div class="col-xl-2 col-md-1 mb-md-1 mb-1">
-                      <!-- Links -->
+                    <div class="col-xl-2 col-lg-2 col-md-4   col-md-1 mb-md-1 mb-1">
                       <h5 id="header-styl" class="text-uppercase">Jeep Life</h5>
                       <ul class="list-unstyled">
                         <li><a href="#!">Jeep Life Home</a></li>
@@ -330,8 +352,7 @@
                       </ul>
                     </div>
 
-                    <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
-                      <!-- Links -->
+                    <div class="col-xl-3 col-lg-2 col-md-4  col-md-1 mb-md-1 mb-1">
                       <h5 id="header-styl" class="text-uppercase">Legal</h5>
                       <ul class="list-unstyled">
                         <li><a href="#!">Privacy Policy</a></li>
@@ -343,7 +364,6 @@
                     </div>
                     <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
                     </div>
-                <!-- Grid row -->
               </div>
             </div>
 
@@ -381,7 +401,6 @@
         </div>
      </div>
    </div>
-
 
  </body>
 </html>
