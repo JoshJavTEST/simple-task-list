@@ -12,373 +12,50 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" type="image/png" href="j-Icon.png"/>
-  <title>Jeep SUVs &amp; Crossovers - Official Jeep Site</title>
+
 </head>
   <body>
 
+<div class="bg-pic col-12">
+    <div class="fluid-container">
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1 col-md-12 ">
 
-    <nav class="navbar navbar-expand-lg navbar-white bg-black">
-          <div class="container">
-            <div class="nav-item"><a class="navbar-brand logo" href="#"></a></div>
-            <div class="nav-item"><a class="links-a" href="#">Vehicles <i class="fas fa-chevron-down fa-fw"></i></a></div>
-            <div class="nav-item d-none  d-md-block"><a class="links-a" href="#">Shopping Tools <i class="fas fa-chevron-down fa-fw"></i></a></div>
-            <div class="nav-item d-none d-md-block"><a class="links-a" href="#">Capability <i class="fas fa-chevron-down fa-fw"></i></a></div>
-            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-              <span id="menu-styl">MENU <i class="fas fa-bars"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarsExample07">
-              <ul class="navbar-nav mt-2 mr-auto">
-                <li class="nav-item d-md-none d-lg-none d-xl-none "><a class="nav-link links-a" href="#">Shopping Tools <i class="fas fa-chevron-down fa-fw"></i></a></li>
-                <li class="nav-item d-md-none d-lg-none d-xl-none"><a class="nav-link links-a" href="#">Capability <i class="fas fa-chevron-down fa-fw"></i></a></li>
-                <li class="nav-item">
-                  <a class="nav-link links-a" href="#">Jeep<sup id="trademark">&reg;</sup> Life</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link links-a" href="#">Owners <i class="fas fa-chevron-down fa-fw"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link links-a" href="#">Merchandise <i class="fas fa-external-link-alt fa-fw"></i></a>
-                </li>
-              </ul>
-              <div class="navbar navbar-expand-lg navbar-white bg-black blink">
-                <span class="nav-item  line">|</span>
-                <div class="nav-item" id="spanish"><a class="nav-link links-b" href="#"><i class="fas fa-comment-alt fa-fw"></i> Español</a></div>
-                  <span class="nav-item links-b"><i class="fas fa-map-marker-alt"></i></span>
-                   <div class="nav-item"><a class="nav-link links-b" href="#">FIND A <br> DEALER</a></div>
-                  <span class="nav-item links-b"><i class="fas fa-wrench"></i></span>
-                   <div class="nav-item"><a class="nav-link links-b" href="#">BUILD & <br> PRICE</a></div>
-             </div>
-            </div>
-          </div>
-        </nav>
+                        <div id="myDIV" class="mt-5 header">
+                          <h2>My To Do List</h2>
+                          <input type="text" id="myInput" onKeyDown="if(event.keyCode==13) newElement()" placeholder="Enter Task...">
+                          <span  onclick="newElement();" class="addBtn">Add</span>
+                        </div>
 
 
 
+                        <ul id="myUL">
+                        
+                        
+                        </ul>
 
 
-     <main role="main">
-       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-         <ol class="carousel-indicators">
-           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-           <li data-target="#myCarousel" data-slide-to="1"></li>
-         </ol>
-         <div class="carousel-inner">
-           <div class="carousel-item active">
-              <img src="images/header-wrangler.jpg" alt="jeep wrangler"  width="100%">
-             <div class="container">
-               <div class="carousel-caption mb-4 text-left">
-                 <img src="images/mt.png" alt="motor trend suv of the year">
-                 <h1>Now get the award-winning 2019 Jeep Wrangler Sport for $299/month for 48 months</h1>
-                 <p>3,599 Due at lease signing. No, secutiry desposit required.</p>
-                 <p><a id="yellow-button1" class="" href="#" role="button">VIEW THE 2019 WRANGLER</a></p>
-               </div>
-             </div>
-           </div>
+                        
+              <!--
+                  <div class="col-lg-5 col-md-12">
+                              <div class="mt-5 header-side">
+                               <h2>Already Done</h2>
+                                  <ul id="done-items" class="list-unstyled">
+                                      <li>Some item <button class="remove-item btn btn-default btn-xs pull-right"><span class="glyphicon glyphicon-remove"></span></button></li>
 
-           <div class="carousel-item">
-             <img src="images/all-jeeps.jpg" alt="jeep wrangler"  width="100%">
-             <div class="container">
-               <div class="carousel-caption text-right">
-                 <h1 class="">Jeep Freedom Days</h1>
-                 <p>Now Get</p>
-                 <p>No monthly Payments for 90 Days</p>
-                 <p>An Addtional $500 Bonus Cash</p>
-                 <p>Plus</p>
-                 <p>On select vehicles in addition to Qualifying offers</p>
-                 <p><a id="yellow-button1" class="" href="#" role="button">View Incentives and Offers</a></p>
-               </div>
-             </div>
-           </div>
-         </div>
-         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-           <span class="sr-only">Previous</span>
-         </a>
-         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-           <span class="sr-only">Next</span>
-         </a>
-       </div>
+                                  </ul>
+                              </div>
+                          </div>
+                  -->
 
-
-       <div class="fluid-container">
-         <div class="row mini-j">
-           <div class="col-md-12  d-flex justify-content-center"><h2>Jeep Vehicles</h2></div>
-           <div class="col-md-2">
-            <a href="#"><img src="images/red-wrang.jpg" alt="red wrangler"></a><p>ALL-NEW WRANGLER</p><p>MSRP STARTING AT</p><p>$27,945</p>
-           </div>
-           <div class="col-md-2">
-             <a href="#"><img src="images/black-gc.jpg" alt="black grand cherokee"></a><p>GRAND CHEROKEE</p><p>MSRP STARTING AT</p><p>$27,945</p>
-           </div>
-           <div class="col-md-2">
-            <a href="#"><img src="images/grey-kee.jpg" alt="grey jeep cherokee"></a><p>CHEROKEE</p><p>MSRP STARTING AT</p><p>$27,945</p>
-           </div>
-           <div class="col-md-2">
-             <a href="#"><img src="images/white-comp-small.jpg" alt="white jeep compass"></a><p>COMPASS</p><p>MSRP STARTING AT</p><p>$27,945</p>
-           </div>
-           <div class="col-md-2">
-             <a href="#"><img src="images/white-ren-small.jpg" alt="white jeep renegade"></a><p>RENEGADE</p><p>MSRP STARTING AT</p><p>$27,945</p>
-           </div>
-           <div class="col-md-2">
-            <a href="#"><img src="images/blue-wrang.jpg" alt="blue jeep wrangler gladiator"></a><p>ALL-NEW GLADIATOR COMING 2019</p><p></p>
-           </div>
-         </div>
-       </div>
-
-       <div class="album py-5 bg-light">
-        <div class="fluid-container">
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-               <img src="images/green-comp.jpg" alt="white compass">
-                <div class="card-body">
-                  <h3>2018 JEEP COMPASS</h3>
-                  <p>Now get up to $2,750 total cash on Trailhawk models.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="#">EXPLORE THE JEEP COMPASS</a>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-               <img src="images/red-jeep.jpg" alt="white compass">
-                <div class="card-body">
-                <h3>2019 JEEP GRAND CHEROKEE</h3>
-                 <p>Just announced an additional $1,000 consumer cash on select models.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="#">EXPLORE THE JEEP COMPASS</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-               <img src="images/white-cherokee.jpg" alt="white compass">
-                <div class="card-body">
-                 <h3>2019 JEEP CHEROKEE</h3>
-                  <p>Now get up to $5,350 total value on select Cherokee models.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <a href="#">EXPLORE THE JEEP COMPASS</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-     </div>
-   </div>
- </div>
 
+            </div>
 
-   <div class="fluid-container">
-     <div class="row">
-      <div class="col-xl-6">
-        <p>MAKE THEM LOOK TWICE WITH THE JEEP GRAPHICS STUDIO</p>
-         <a class="btn btn-lg btn-primary" href="#" role="button">START CUSTOMIZING TODAY</a>
-       </div>
-         <div class="col-xl-6 d-flex justify-content-end" >
-          <img src="images/twojeep.png" alt="two jeeps">
         </div>
-        </div>
-      </div>
-
-      <div class="fluid-container">
-        <div class="row justify-content-center">
-           <img src="images/bluebook.png" alt="kelley blue book badge">
-         <div class="col-xl-4">
-           <h2>SEE YOUR VEHICLE'S TRADE-IN VALUE</h2>
-            <p>Find out how much your current vehicle is worth from the independent Kelley Blue Book (KBB) bases their values based on actual transactions and adjusts them as market conditions change.</p>
-            <a class="btn btn-lg btn-primary" href="#" role="button">CHECK YOUR TRADE-IN VALUE</a>
-          </div>
-
-           </div>
-         </div>
-
-         <div class="navbar fluid-container d-flex justify-content-center align-items-center search-nav">
-           <div class="row align-items-center">
-              <img class="navitem  dis-icon" src="images/chair1.png">
-              <a class="navitem" href="#">Find Your Country</a>
-              <a class="navitem" href="#">Contact Us</a>
-              <a class="navitem" href="#">Site Map</a>
-              <a class="navitem" href="#">Careers</a>
-              <a class="navitem" href="#">Espanol</a>
-
-                <div class="search-cont"><form class="form-inline my-2 my-lg-0">
-                   <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                    <button id="yellow-button" class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                 </form>
-               </div>
-             </div>
-          </div>
 
 
 
-
-
-
-  <div class="footer-all">
-              <div class="fluid-container text-center text-md-left link-s d-flex flex-column align-items-center footer-size">
-                <div class="row col-10 justify-content-center">
-                  <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
-                      <h5 id="header-styl" class="text-uppercase">Vehicles</h5>
-                      <ul class="link-s list-unstyled">
-                        <li><a href="#!">Wrangler</a></li>
-                        <li><a href="#!">Grand Cherokee</a></li>
-                        <li><a href="#!">Cherokee</a></li>
-                        <li><a href="#!">Renegade</a></li>
-                        <li><a href="#!">Compass</a></li>
-                        <li><a href="#!">Gladiator</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
-
-                      <h5 id="header-styl" class="text-uppercase">Research</h5>
-                      <ul class="list-unstyled">
-                        <li><a href="#!">Adventure Reality</a></li>
-                        <li><a href="#!">Build & Price</a></li>
-                        <li><a href="#!">Compare Models</a></li>
-                        <li><a href="#!">Get a Brochure</a></li>
-                        <li><a href="#!">Sign Up for Updates</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
-
-                      <h5 id="header-styl" class="text-uppercase">Capability</h5>
-                      <ul class="list-unstyled">
-                        <li><a href="#!">Trail Rated</a></li>
-                        <li><a href="#!">4x4 Systems</a></li>
-                        <li><a href="#!">Towing</a></li>
-                        <li><a href="#!">Fuel Efficiency</a></li>
-                        <li><a href="#!">FAQ and Glossary</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
-                      <h5 id="header-styl" class="text-uppercase">Owners</h5>
-                      <ul class="list-unstyled">
-                        <li><a href="#!">Jeep Graphics Studio</a></li>
-                        <li><a href="#!">Owners Manuals and User Guides</a></li>
-                        <li><a href="#!">ehicle Identification Number</a></li>
-                        <li><a href="#!">Warranty</a></li>
-                        <li><a href="#!">Jeep Wave</a></li>
-                        <li><a href="#!">Recall Information</a></li>
-                        <li><a href="#!">EcoDiesel Settlment</a></li>
-                        <li><a href="#!">Jeep Gear</a></li>
-                        <li><a href="#!">Jeep DrivePlus Mastercard</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-2  col-md-1 mb-md-1 mb-1">
-                      <h5 id="header-styl" class="text-uppercase">Follow Us</h5>
-                      <ul class="list-unstyled d-flex icons1">
-                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
-                      </ul>
-                    </div>
-
-                    <div class="col-md-1 mb-md-1 mb-1 d">
-                      <ul>
-                      <h5 id="header-styl" class="text-uppercase">Support</h5>
-                        <li><a href="#"><img src="images/Uconnect.png" alt=""></a></li>
-                        <li><a href="#"><img src="images/siriusxm.png" alt=""></a></li>
-                      </ul>
-                    </div>
-
-                </div>
-                <div class="row col-10 justify-content-center link-bottom">
-                  <div class="col-xl-2 col-lg-2 col-md-4 mb-md-1 mb-1">
-                      <h5 id="header-styl" class="text-uppercase">Cost</h5>
-                      <ul class="list-unstyled">
-                        <li><a href="#!">View Incentives</a></li>
-                        <li><a href="#!">National Incentives</a></li>
-                        <li><a href="#!">Calculate Payment</a></li>
-                        <li><a href="#!">Find Your Trade-In Value</a></li>
-                        <li><a href="#!">Get a Quote</a></li>
-                        <li><a href="#!">Apply for Credit</a></li>
-                        <li><a href="#!">Get Prequalified</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 mb-md-1 mb-1">
-                      <h5 id="header-styl" class="text-uppercase">Locate</h5>
-                      <ul class="list-unstyled">
-                        <li><a href="#!">Search New Inventory</a></li>
-                        <li><a href="#!">Find a Dealer</a></li>
-                        <li><a href="#!">Schedule a Test Drive</a></li>
-                        <li><a href="#!">Search Pre-Owned Vehicles</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="col-xl-2 col-lg-2 col-md-4   col-md-1 mb-md-1 mb-1">
-                      <h5 id="header-styl" class="text-uppercase">Jeep Life</h5>
-                      <ul class="list-unstyled">
-                        <li><a href="#!">Jeep Life Home</a></li>
-                        <li><a href="#!">Easter Jeep Safari</a></li>
-                        <li><a href="#!">Jeep Badge of Honor</a></li>
-                        <li><a href="#!">Jeep Partnerships</a></li>
-                        <li><a href="#!">Jeep Brand History</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-2 col-md-4  col-md-1 mb-md-1 mb-1">
-                      <h5 id="header-styl" class="text-uppercase">Legal</h5>
-                      <ul class="list-unstyled">
-                        <li><a href="#!">Privacy Policy</a></li>
-                        <li><a href="#!">Copyright</a></li>
-                        <li><a href="#!">Terms of Use</a></li>
-                        <li><a href="#!">Legal, Safety, and Trademark Information</a></li>
-                        <li><a href="#!">Ad Choices</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-xl-2 col-lg-2  col-md-1 mb-md-1 mb-1">
-                    </div>
-              </div>
-            </div>
-
-
-    <div class="container hr-fter shrink-footer">
-      <div class="row col-12 ft-links brand-links">
-          <div class="brands d-lg-flex col-xl-6 d-md-none d-sm-none d-none">
-              <a href="#"><img src="images/FCA.png"></a>
-              <a href="#"><img src="images/chrysler.png"></a>
-            </div>
-          <div class="brand-links col-xl-6 col-lg-7 col-md-8 col-sm-10 mt-lg-4 mt-xl-0 col-sm-3 flex-wrap d-flex justify-content-xl-end brand-links ">
-         <a href="#">CHRYSLER</a>
-         <a href="#">DODGE</a>
-         <a href="#">JEEP</a>
-         <a href="#">RAM</a>
-         <a href="#">MOPAR</a>
-         <a href="#">FIAT</a>
-         <a href="#">ALFA ROMEO</a>
-         <a href="#">FCA Fleet</a>
-         </div>
-      </div>
-     <div class="row rights">
-      <div class="col-xl-9 col-lg-7 col-md-7">
-       <p class="no-space">2019 FCA US LLC. All Rights Reserved.</p>
-        <p class="no-space">Chrysler, Dodge, Jeep, Ram, Mopar and SRT are registered trademarks of FCA US LLC.</p>
-         <p>ALFA ROMEO and FIAT are registered trademarks of FCA Group Marketing S.p.A., used with permission.</p>
-
-          <p>*MSRP excludes destination, taxes, title and registration fees. Starting at price refers to the base model, optional equipment not included.
-            A more expensive model may be shown. Pricing and offers may change at any time without notification. To get full pricing details, see your dealer.</p>
-
-          <p>FCA strives to ensure that its website is accessible to individuals with disabilities. Should you encounter an issue accessing any content on www.jeep.com,
-             please contact our Customer Service Team at www.jeep.com/webselfservice/jeep/index.html or 1-877-IAMJEEP, for further assistance or to report a problem. Access to www.jeep.com is
-             subject to FCA’s Privacy Policy and Terms of Use.</p>
-          </div>
-        </div>
-     </div>
-   </div>
-
+<script src="stock.js"></script>
  </body>
 </html>
