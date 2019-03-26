@@ -3,11 +3,13 @@
 
 let db;
 let tasks;
+
+
 let dbReq = indexedDB.open('simpleTasks', 1,);
 dbReq.onupgradeneeded = function(event) {
   // Set the db variable to our database so we can use it!  
   db = event.target.result;
-  getAndDisplayTasks(db);
+  
 
   // Create an object store named notes. Object stores
   // in databases are where data are stored.
@@ -42,32 +44,7 @@ dbReq.onsuccess = function(event) {
 }
 
 
-function getAndDisplayTasks(db) {
-  let tx = db.transaction(['tasks'], 'readonly');
-  let store = tx.objectStore('tasks');
-  // Create a cursor request to get all items in the store, which 
-  // we collect in the allNotes array
-  let req = store.openCursor();
-  let allTasks = [];
 
-  req.onsuccess = function(event) {
-    // The result of req.onsuccess is an IDBCursor
-    let cursor = event.target.result;
-    if (cursor != null) {
-      // If the cursor isn't null, we got an IndexedDB item.
-      // Add it to the note array and have the cursor continue!
-      allTasks.push(cursor.value);
-      cursor.continue();
-    } else {
-      // If we have a null cursor, it means we've gotten
-      // all the items in the store, so display the notes we got
-      displayTasks(allTasks);
-    }
-  }
-  req.onerror = function(event) {
-    alert('error in cursor request ' + event.target.errorCode);
-  }
-}
 
 
 
